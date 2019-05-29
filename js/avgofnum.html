@@ -1,0 +1,69 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <!--avg of 3 num-->
+    <script>
+        //function with parameters and return value
+        function num1(a,b,c)
+        {
+            //d=(a+b+c)/3
+            return(eval(a)+eval(b)+eval(c))/3;
+        }
+        var e= num1(a=prompt("Enter a value",""), b=prompt("Enter b value",""), c=prompt("Enter c value",""))
+        document.write("The avg of 3 nums  is : " + e+ "<hr>");
+        
+        
+        //function with out parameters and return value
+
+        
+        function num2()
+        {
+            var a=prompt("Enter a value",""), b=prompt("Enter b value",""), c=prompt("Enter c value","")
+            d=(eval(a)+eval(b)+eval(c))/3
+            document.write("The avg of 3 nums  is : " + d+ "<hr>");
+        }
+        num2();
+
+
+
+        //function with parameters and without return value
+
+
+
+
+        function num3(a,b,c)
+        {
+            d=(eval(a)+eval(b)+eval(c))/3
+            document.write("The avg of 3 nums  is : " + d+ "<hr>");
+        }
+        var f= num3(a=prompt("Enter a value",""), b=prompt("Enter b value",""), c=prompt("Enter c value",""))
+
+
+
+
+
+
+
+        // function without parameters and with return value
+
+
+
+
+
+        function num4()
+        {
+            var a=prompt("Enter a value",""), b=prompt("Enter b value",""), c=prompt("Enter c value","")
+            return(eval(a)+eval(b)+eval(c))/3;
+        }
+        var n=num4();
+        document.write("The avg of 3 nums  is : " + n+ "<hr>");
+
+
+    </script>
+</body>
+</html>

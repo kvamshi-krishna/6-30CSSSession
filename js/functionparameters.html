@@ -1,0 +1,53 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Function preparation types</title>
+</head>
+<body>
+    <!--cube of a number-->
+    <script>
+        //function with parameters and return value
+        function cube1(n)
+        {
+            return(n*n*n);
+        }
+        var d1 = cube1(n =prompt("Enter value of n",""));
+        document.write("The cube value is : " + d1+ "<hr>");
+
+        //function without parameters and return value
+
+        function cube2 ()
+        {
+            var n = prompt("Enter the value of n ","");
+            n = n*n*n;
+            document.write("The cube value is : " + n+ "<hr>");
+        }
+        cube2();
+
+
+        //function with paramaters and with out return value
+
+
+        function cube3(n)
+        {
+            d = n*n*n;
+            document.write("The cube value is : " + d+ "<hr>");
+        }
+        cube3(n=prompt("Enter the value of n",""));
+
+
+        //function with out parameters and with return value
+
+
+        function cube4()
+        {
+            e = prompt("Enter the n value","");
+            return(n*n*n);
+        }
+        var f=cube4();
+        document.write("The cube value is : " + f+ "<hr>");
+    </script>
+</body>
+</html>
