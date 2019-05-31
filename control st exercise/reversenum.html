@@ -1,0 +1,66 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Reverse of a given number</title>
+</head>
+<body>
+    <!--functions-->
+    <script>
+        //function with parameters and return value
+        function reverse_of_number(n)
+        {
+            n= n+"";
+            document.write("the number given is : "+ n+"<br>");
+            return n.split("").reverse().join("");
+        }
+        var t=reverse_of_number(n=prompt("enter the num to reverse it",""));
+        document.write("the reverse num  is : " + t +"<hr>");
+        
+        
+        //function without parameters and return value
+
+
+        function reverseofnum()
+        {
+            var n = prompt ("Enter the num to reverse","");
+            document.write("the given num to reverse"+ n+"<br>");
+            n=n+"";
+            t = n.split("").reverse().join("");
+            document.write("the reversed num is : "+t+"<hr>"); 
+        }
+        reverseofnum();
+
+
+        //function with parameters and without return value
+
+
+
+        function rever(n)
+        {
+            document.write("the given num to reverse"+ n+"<br>");
+            t = n.split("").reverse().join("");
+            document.write("the reversed num is"+ t+"<hr>");
+        }
+
+        rever(n = prompt("enter the num for reversing",""));
+
+
+
+        //functions without parameters and with return value
+
+
+
+        function revers()
+        {
+            var n= prompt("enter the num for reversing ","");
+            document.write("the given num is"+ n+"<br>");
+            return n.split("").reverse().join("");
+        }
+
+        t=revers();
+        document.write("the reversed num is"+ t+"<hr>");
+    </script>
+</body>
+</html>

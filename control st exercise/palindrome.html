@@ -1,0 +1,53 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>polindrome</title>
+</head>
+<body>
+    <!--functions-->
+    <script>
+    //Check whether a passed string is palindrome or not
+    //function with parameters and return value
+    function polindrome(n)
+    {
+        n=n.toLowerCase();
+        var t= n.split("").reverse().join("");
+        if(t===n)
+        {
+            return "polindrome";
+        }
+        else
+        {
+            return "non-polindrome";
+        }
+    }
+    s=polindrome(n=prompt("enter the string to Check  palindrome or not",""));
+    document.write("the given word "+n+" is : " +s+"<hr>");
+    
+    
+    
+    //  function without parameters and return value
+
+    function polindrome1()
+    {
+        var n = prompt("enter the string to Check  palindrome or not","");
+        n=n.toLowerCase();
+        var t = n.split("").reverse().join("");
+        if(t===n)
+        {
+            document.write( "the given word  " +n+ " is polindrome");
+        }
+        else
+        {
+            document.write( "the given word "+n+" is non-polindrome");
+        }
+    }
+    polindrome1();
+
+    //function with parameters and without return value
+
+    </script>
+</body>
+</html>

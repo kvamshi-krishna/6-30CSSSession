@@ -1,0 +1,40 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>print every starting letter of a word in captial letter</title>
+</head>
+<body>
+    <script>
+        function strng(n)
+        {
+            var a = n.split(' ');
+            var a1=[];
+            for(var i=0;i < a.length ; i++)
+            {
+                    a1.push(a[i].charAt(0).toUpperCase()+a[i].slice(1));
+            }
+            return a1.join(' ');
+        }
+        var t = strng(n = prompt("enter a string",""));
+        document.write(t+"<hr>");
+
+
+
+
+        function str(x)
+	            {
+	            	var z = x.split(' ');
+	            	var a = [];
+	            	for (var b=0; b < z.length; b++)
+	            	{
+	            		a.push(z[b].charAt(0).toUpperCase() + z[b].slice(1));
+	            	}
+	            	return a.join(" ");
+	            }
+ 				var m = str(x = prompt("Enter a string",""));
+ 				document.write(m);
+    </script>
+</body>
+</html>
